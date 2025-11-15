@@ -3,7 +3,6 @@ import joblib
 import pandas as pd
 import numpy as np
 
-# Load ML model
 with open("ipl_win_predictor.pkl", "rb") as f:
     pipe = joblib.load(f)
 
@@ -92,3 +91,4 @@ if st.button("Predict Probability"):
 
     except Exception as e:
         st.error(f"Prediction failed: {e}")
+
